@@ -1,0 +1,53 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_02PBG9D160VRZ4h8X5sGhOJKpCqb9fTJimS",
+    "name": "test",
+    "title": "test",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "test",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_02PRG3S8JF93F46JR2rgPvSzzGuabPSKbvO",
+        "name": "Read Table from Text",
+        "title": "Read Table from Text",
+        "type": "core.read_table_from_text",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "delimiters": [
+            {
+              "delimiter": ","
+            }
+          ],
+          "description": "Reading table data from Text",
+          "display_name": "Read Table from Text",
+          "input_text": "header1, header2, header3\ndata1, data2, data3",
+          "persist_output": false,
+          "populate_columns": true,
+          "skip_execution": false,
+          "table_columns": []
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
